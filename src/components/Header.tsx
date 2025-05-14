@@ -1,0 +1,77 @@
+
+"use client"
+import React, { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+
+
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <header className='header  p-3  col-12 col-md-10 col-lg-12'>
+      <div className="container-fluid border-black border-bottom">
+        <div className="row align-items-center">
+          <div className="col-4 d-flex align-items">
+            <div className='categories'>
+              <div className='dropdown'>
+                <button
+                  onClick={toggleDropdown} 
+                  className='dropdownToggle'
+                >
+                  Categories {isOpen ? '▲' : '▼'}
+                </button>
+                {isOpen && (
+                  <div className='dropdownMenu'>
+                    <Link href="/category1" className='dropdownItem'>Category 1</Link>
+                    <Link href="/category2" className='dropdownItem'>Category 2</Link>
+                    <Link href="/category3" className='dropdownItem'>Category 3</Link>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+          
+          <div className="col-4 text-center">
+            <div className='logo'>
+              <Link href="/">
+                <Image 
+                  src="https://cdn.prod.website-files.com/654e26ea6b3b83d910b4a897/65538efdbda9f3a9952d79e8_TAGMAG%20LOGO.svg" 
+                  alt="Tagmag Logo" 
+                  width={180} 
+                  height={40}
+                  className='logoImage'
+                  priority
+                />
+              </Link>
+            </div>
+          </div>
+          
+          <div className="col-4">
+            <div className='socialIcons'>
+              <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className='socialIcon'>
+                <i className="bi bi-facebook"></i>
+              </Link>
+              <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className='socialIcon'>
+                <i className="bi bi-instagram"></i>
+              </Link>
+              <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className='socialIcon'>
+                <i className="bi bi-twitter-x"></i>
+              </Link>
+              <Link href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className='socialIcon'>
+                <i className="bi bi-pinterest"></i>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </header>
+  );
+};
+
+export default Header;

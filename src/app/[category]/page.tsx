@@ -6,12 +6,13 @@ import ArticleCard from "@/components/ArticleCard";
 import ConnectionCards from "@/components/ConnectionCard";
 
 interface CategoryPageProps {
-  params: {
+  params: Promise<{
     category: string;
-  };
+  }>;
 }
 
-const CategoryPage: FC<CategoryPageProps> = ({ params }) => {
+const CategoryPage: FC<CategoryPageProps> = async props => {
+  const params = await props.params;
   const { category } = params;
 
   const formattedCategory =

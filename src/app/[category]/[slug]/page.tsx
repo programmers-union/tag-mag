@@ -6,14 +6,14 @@ import DetailSection from "@/components/DetailSection1";
 import { FC } from "react";
 
 interface DetailPageProps {
-  params: {
+  params:Promise <{
     category: string;
     slug: string;
-  };
+  }>;
 }
 
-const DetailPage: FC<DetailPageProps> = ({ params }) => {
-  const { category, slug } = params;
+const  DetailPage: FC<DetailPageProps> = async ({ params }) => { 
+  const { category, slug } = await  params;
 
   // Optional formatting
   const formattedCategory =

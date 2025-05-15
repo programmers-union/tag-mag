@@ -5,6 +5,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 
+const categories = [
+  { name: 'Lifestyle', slug: 'lifestyle' },
+  { name: 'Entertainment', slug: 'entertainment' },
+  { name: 'Technology', slug: 'technology' },
+  {name:'Business', slug:'business'}
+  
+];
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   
@@ -27,9 +35,15 @@ const Header = () => {
                 </button>
                 {isOpen && (
                   <div className='dropdownMenu'>
-                    <Link href="/category1" className='dropdownItem'>Category 1</Link>
-                    <Link href="/category2" className='dropdownItem'>Category 2</Link>
-                    <Link href="/category3" className='dropdownItem'>Category 3</Link>
+                    {categories.map((category) => (
+                      <Link
+                        key={category.slug}
+                        href={`/${category.slug}`}
+                        className='dropdownItem'
+                      >
+                        {category.name}
+                      </Link>
+                    ))}
                   </div>
                 )}
               </div>

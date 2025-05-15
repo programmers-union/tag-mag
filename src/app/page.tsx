@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import HomeSection1 from "@/components/HomeSection1";
 import ArticleCard from "@/components/ArticleCard";
 import MagazineBanner from "@/components/Banner";
+import ConnectionCards from "@/components/ConnectionCard";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
             imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba6d5d53b81a43fff4c75f_pexels-ron-lach-8128675-p-500.jpg"
             imageAlt="Skincare routine demonstration"
             title="Beauty Toolbox:Must-Have products for every Routine"
-            href="/articles/skincare-secrets"
+            href="/lifestyle/skincare-secrets"
             imageWidth="450px"
             imageHeight="300px"
           />
@@ -153,7 +154,7 @@ export default function Home() {
       <div className="row justify-content-center border-bottom border-black  col-12 col-md-10 col-lg-12 text-center mx-auto">
         <h2 className="section-subtitle   py-5">New From Entertainment</h2>
       </div>
-      <div className=" mx-5 row ">
+      <div className=" mx-5 row border-black border-bottom ">
         <div className="col-lg-4">
           <ArticleCard
             category="Entertainment"
@@ -203,7 +204,7 @@ export default function Home() {
             imageHeight="400px"
           />
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-6 border-bottom">
           <ArticleCard
             category="Lifestyle"
             readTime="3 Min Read"
@@ -214,8 +215,13 @@ export default function Home() {
             imageWidth="600px"
             imageHeight="400px"
           />
+          
         </div>
       </div>
+      <div className="container">
+            <ConnectionCards/>
+      </div>
+      
     </div>
   );
 }

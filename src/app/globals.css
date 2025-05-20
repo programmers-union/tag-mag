@@ -223,10 +223,12 @@ html, body {
  .beauty-article-card {
           transition: transform 0.3s ease;
           max-width: 600px;
+          box-shadow: none;
         }
         
         .beauty-article-card:hover {
-          transform: translateY(-5px);
+         
+           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
         
         .article-image-container {

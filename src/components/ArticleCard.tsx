@@ -7,8 +7,8 @@ const ArticleCard = ({
   imageUrl = "/beauty-product-image.jpg", 
   imageAlt = "Beauty product demonstration",
   title = "Beauty Toolbox: Must-Have Products for Every Routine", 
-  href = "/articles/beauty-toolbox" ,
-    imageWidth = "450px",
+  href = "/articles/beauty-toolbox",
+  imageWidth = "450px",
   imageHeight = "300px"
 }) => {
   return (
@@ -19,8 +19,8 @@ const ArticleCard = ({
           <span className="read-time text-muted small">{readTime}</span>
         </div>
         
-        <Link href={href} className="text-decoration-none">
-          <div className="article-image-container position-relative" style={{ height: imageHeight, width:imageWidth}}>
+        <Link href={href} className="text-decoration-none article-card-link">
+          <div className="article-image-container position-relative" style={{ height: imageHeight, width: imageWidth }}>
             <Image 
               src={imageUrl}
               alt={imageAlt}
@@ -31,11 +31,11 @@ const ArticleCard = ({
           </div>
           
           <div className="card-body px-0 py-3">
-            <h2 className="article-title fs-4  text-dark mb-0">{title}</h2>
+            <h2 className="article-title fs-4 text-dark mb-0">{title}</h2>
           </div>
         </Link>
       </div>
-      
+
 
     </div>
   );

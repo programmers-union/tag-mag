@@ -1,9 +1,9 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import HomeSection1 from "@/components/HomeSection1";
 import ArticleCard from "@/components/ArticleCard";
 import MagazineBanner from "@/components/Banner";
 import ConnectionCards from "@/components/ConnectionCard";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -80,11 +80,11 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="border-black border-bottom">
+      <div className="border-black border-bottom container">
         <MagazineBanner />
       </div>
 
-      <div className="row justify-content-center border-bottom border-black  col-12 col-md-10 col-lg-12 text-center mx-auto">
+      <div className="row justify-content-center border-bottom border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
         <h2 className="section-subtitle   py-5">Latest From Business</h2>
       </div>
 
@@ -114,7 +114,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="row justify-content-center border-bottom border-black  col-12 col-md-10 col-lg-12 text-center mx-auto">
+      <div className="row justify-content-center border-bottom border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
         <h2 className="section-subtitle   py-5">Latest From Technology</h2>
       </div>
       <div className=" mx-5 row border-black border-bottom">
@@ -151,7 +151,31 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="row justify-content-center border-bottom border-black  col-12 col-md-10 col-lg-12 text-center mx-auto">
+
+      <div>
+              <div className="row justify-content-center   col-12 col-md-10 col-lg-12 text-center mx-auto container">
+        <h2 className="section-subtitle   py-5">Tagmag Media</h2>
+      </div>
+        <div className="container-img py-3 container">
+          <div className="imageContainer">
+            <Image
+              src="/youtube.png"
+              alt="Show, don't tell — create sites that do the talking for you"
+              layout="fill"
+              objectFit="cover"
+              priority
+              className="fullSizeImage"
+            />
+<div className="cta-container mt-4">
+  <Link href="/about" className="btn btn-dark btn-lg px-4 py-2">
+    Follow Channel
+  </Link>
+</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="row justify-content-center border-bottom border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
         <h2 className="section-subtitle   py-5">New From Entertainment</h2>
       </div>
       <div className=" mx-5 row border-black border-bottom ">
@@ -188,10 +212,10 @@ export default function Home() {
           />
         </div>
       </div>
-            <div className="row justify-content-center border-bottom border-black  col-12 col-md-10 col-lg-12 text-center mx-auto">
+      <div className="row justify-content-center border-bottom border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
         <h2 className="section-subtitle   py-5">New From Lifestyle</h2>
       </div>
-            <div className=" mx-5 row border-black border-bottom">
+      <div className=" mx-5 row border-black border-bottom">
         <div className="col-lg-6">
           <ArticleCard
             category="Lifestyle"
@@ -215,13 +239,11 @@ export default function Home() {
             imageWidth="600px"
             imageHeight="400px"
           />
-          
         </div>
       </div>
       <div className="container">
-            <ConnectionCards/>
+        <ConnectionCards />
       </div>
-      
     </div>
   );
 }

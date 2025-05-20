@@ -31,7 +31,7 @@ const ArticleCard = ({
           </div>
           
           <div className="card-body px-0 py-3">
-            <h2 className="article-title fs-4 fw-bold text-dark mb-0">{title}</h2>
+            <h2 className="article-title fs-4  text-dark mb-0">{title}</h2>
           </div>
         </Link>
       </div>

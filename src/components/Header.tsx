@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <header className='header  p-3  col-12 col-md-10 col-lg-12'>
-      <div className="container-fluid border-black border-bottom">
+      <div className="container-fluid border-black border-bottom py-3">
         <div className="row align-items-center">
           <div className="col-4 d-flex align-items">
             <div className='categories'>

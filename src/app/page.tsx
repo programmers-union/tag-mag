@@ -18,7 +18,7 @@ export default function Home() {
             imageAlt="Skincare routine demonstration"
             title="Beauty Toolbox:Must-Have products for every Routine"
             href="/lifestyle/skincare-secrets"
-            imageWidth="450px"
+            imageWidth="390px"
             imageHeight="300px"
           />
         </div>
@@ -30,6 +30,8 @@ export default function Home() {
             imageAlt="Skincare routine demonstration"
             title="Small Screen Chronicles: Navigating the World of TV"
             href="/articles/skincare-secrets"
+            imageWidth="390px"
+            imageHeight="300px"
           />
         </div>
         <div className="col-lg-4">
@@ -40,6 +42,8 @@ export default function Home() {
             imageAlt="Skincare routine demonstration"
             title="Code Chronicles: Exploring the World of Programming and Development"
             href="/articles/skincare-secrets"
+            imageWidth="390px"
+            imageHeight="300px"
           />
         </div>
       </div>
@@ -53,7 +57,7 @@ export default function Home() {
             imageAlt="Skincare routine demonstration"
             title="Sound Waves: A Symphony of Musical Trends"
             href="/articles/skincare-secrets"
-            imageWidth="450px"
+            imageWidth="390px"
             imageHeight="300px"
           />
         </div>
@@ -65,7 +69,7 @@ export default function Home() {
             imageAlt="Skincare routine demonstration"
             title="Crypto Chronicles: Updates and Insights in the World of Virtual Coins"
             href="/articles/skincare-secrets"
-            imageWidth="450px"
+            imageWidth="390px"
             imageHeight="300px"
           />
         </div>
@@ -77,6 +81,8 @@ export default function Home() {
             imageAlt="Skincare routine demonstration"
             title="Culinary Adventures: Exploring Global Flavors in Your Kitchen"
             href="/articles/skincare-secrets"
+            imageWidth="390px"
+            imageHeight="300px"
           />
         </div>
       </div>
@@ -97,7 +103,7 @@ export default function Home() {
             imageAlt="Skincare routine demonstration"
             title="CEO Insight: Perspectives on Leadership and Business Innovation"
             href="/articles/skincare-secrets"
-            imageWidth="600px"
+            imageWidth="550px"
             imageHeight="400px"
           />
         </div>
@@ -109,7 +115,7 @@ export default function Home() {
             imageAlt="Skincare routine demonstration"
             title="Plug into the Future: Exploring the World of Electric Vehicles"
             href="/articles/skincare-secrets"
-            imageWidth="600px"
+            imageWidth="550px"
             imageHeight="400px"
           />
         </div>
@@ -126,7 +132,7 @@ export default function Home() {
             imageAlt="Skincare routine demonstration"
             title="Cognitive Chronicles: Exploring the World of Artificial Intelligence"
             href="/articles/skincare-secrets"
-            imageWidth="450px"
+            imageWidth="390px"
             imageHeight="300px"
           />
         </div>
@@ -138,6 +144,8 @@ export default function Home() {
             imageAlt="Skincare routine demonstration"
             title="Future Tech Files: Dive into Tomorrow's Innovations Today"
             href="/articles/skincare-secrets"
+            imageWidth="390px"
+            imageHeight="300px"
           />
         </div>
         <div className="col-lg-4">
@@ -148,32 +156,37 @@ export default function Home() {
             imageAlt="Skincare routine demonstration"
             title="Navigating the Future: Cutting-Edge Technologies Redefining Tomorrow"
             href="/articles/skincare-secrets"
+            imageWidth="390px"
+            imageHeight="300px"
           />
         </div>
       </div>
-
-      <div>
-              <div className="row justify-content-center   col-12 col-md-10 col-lg-12 text-center mx-auto container">
-        <h2 className="section-subtitle   py-5">Tagmag Media</h2>
-      </div>
-        <div className="container-img py-3 container">
-          <div className="imageContainer">
+      <div className="row">
+        <div className="col-lg">
+ <div className="row justify-content-center   col-10 col-md-10 col-lg-10 text-center mx-auto container">
+          <h2 className="section-subtitle   py-5">Tagmag Media</h2>
+        </div>
+        <div className="container-img py-5  mx-5 border-black border-bottom">
+          <div className="imageContainer rrr ">
             <Image
               src="/youtube.png"
               alt="Show, don't tell — create sites that do the talking for you"
               layout="fill"
-              objectFit="cover"
+              
               priority
               className="fullSizeImage"
             />
-<div className="cta-container mt-4">
-  <Link href="/about" className="btn btn-dark btn-lg px-4 py-2">
-    Follow Channel
-  </Link>
-</div>
+          </div>
+          <div className="cta-container mt-4 text-center mx-auto">
+            <Link href="/about" className="btn btn-dark btn-lg px-4 py-2">
+              Follow Channel
+            </Link>
           </div>
         </div>
+        </div>
       </div>
+
+      
 
       <div className="row justify-content-center border-bottom border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
         <h2 className="section-subtitle   py-5">New From Entertainment</h2>
@@ -187,7 +200,7 @@ export default function Home() {
             imageAlt="Skincare routine demonstration"
             title="Cinephile Chronicles: The Latest in Cinematic Wonders"
             href="/articles/skincare-secrets"
-            imageWidth="450px"
+            imageWidth="390px"
             imageHeight="300px"
           />
         </div>
@@ -199,6 +212,8 @@ export default function Home() {
             imageAlt="Skincare routine demonstration"
             title="The Evolution of Dance: From TikTok to Mainstream Culture"
             href="/articles/skincare-secrets"
+            imageWidth="390px"
+            imageHeight="300px"
           />
         </div>
         <div className="col-lg-4">
@@ -209,6 +224,8 @@ export default function Home() {
             imageAlt="Skincare routine demonstration"
             title="Reading Room Revelations: The Latest in Literature"
             href="/articles/skincare-secrets"
+            imageWidth="390px"
+            imageHeight="300px"
           />
         </div>
       </div>
@@ -224,7 +241,7 @@ export default function Home() {
             imageAlt="Skincare routine demonstration"
             title="Minimalist Haven: Embracing Simplicity in Your Living Space"
             href="/articles/skincare-secrets"
-            imageWidth="600px"
+            imageWidth="550px"
             imageHeight="400px"
           />
         </div>
@@ -236,7 +253,7 @@ export default function Home() {
             imageAlt="Skincare routine demonstration"
             title="Fitness Fusion: Balancing Physical and Mental Health"
             href="/articles/skincare-secrets"
-            imageWidth="600px"
+            imageWidth="550px"
             imageHeight="400px"
           />
         </div>

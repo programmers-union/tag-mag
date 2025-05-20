@@ -16,7 +16,7 @@ const ArticleCard = ({
       <div className="position-relative">
         <div className="card-header-labels d-flex justify-content-between p-2">
           <span className="category fw-medium">{category}</span>
-          <span className="read-time text-muted small">{readTime}</span>
+          <span className="read-time small text-muted">{readTime}</span>
         </div>
         
         <Link href={href} className="text-decoration-none article-card-link">
@@ -35,8 +35,6 @@ const ArticleCard = ({
           </div>
         </Link>
       </div>
-
-
     </div>
   );
 };

@@ -23,7 +23,7 @@ const  DetailPage: FC<DetailPageProps> = async ({ params }) => {
     .replace(/\b\w/g, (c) => c.toUpperCase());
 
   return (
-    <div className="container ">
+    <div className="container py-3 ">
       <div className="">
         <DetailSection
           image="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba6d5d53b81a43fff4c75f_pexels-ron-lach-8128675.jpg"

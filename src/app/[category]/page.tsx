@@ -20,9 +20,9 @@ const CategoryPage: FC<CategoryPageProps> = async props => {
 
   return (
     <div>
-      <div className="section-header ps-2  p-3">
+      <div className="section-header ps-2   p-3">
         <div className="row justify-content-center border-bottom border-black  col-12 col-md-10 col-lg-12 text-center mx-auto">
-          <h1 className="section-title border-black border-bottom py-3 ">
+          <h1 className="section-title py-3 ">
             {formattedCategory}
           </h1>
         </div>
@@ -61,7 +61,7 @@ const CategoryPage: FC<CategoryPageProps> = async props => {
           />
         </div>
       </div>
-            <div className=" mx-5 row border-black border-bottom">
+            <div className=" mx-5 row">
         <div className="col-lg-4">
           <ArticleCard
             category="Entertainment"
@@ -97,7 +97,7 @@ const CategoryPage: FC<CategoryPageProps> = async props => {
           />
         </div>
       </div>
-            <div className="container">
+            <div className="container  border-black border-top">
             <ConnectionCards/>
       </div>
     </div>

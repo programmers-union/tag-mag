@@ -523,7 +523,7 @@ html, body {
 
 .beauty-blog-card {
   width: 100%;
-  max-width: 800px;
+  max-width: 870px;
  
   font-family: 'Arial', sans-serif;
 }
@@ -533,13 +533,13 @@ html, body {
 }
 
 .category-label {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #333;
 }
 
 .read-time {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #666;
 }
 

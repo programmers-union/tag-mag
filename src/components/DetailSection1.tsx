@@ -22,7 +22,7 @@ const DetailSection: React.FC<DetailSectionProps> = ({
       <div className="d-flex justify-content-center">
         <div className="beauty-blog-card position-relative mb-5  ">
           <div className="blog-header d-flex justify-content-between align-items-center mb-2">
-            <span className="category-label">{category}</span>
+            <span className="category-label ">{category}</span>
             <span className="read-time">{readTime}</span>
           </div>
 
@@ -31,12 +31,12 @@ const DetailSection: React.FC<DetailSectionProps> = ({
               src={image}
               alt={title}
               layout="responsive"
-              width={800}
+              width={1000}
               height={500}
               className="blog-image"
             />
           </div>
-
+          
           <Link href={`/blog/${slug}`} className="text-decoration-none">
             <h2 className="blog-title border-bottom border-black">{title}</h2>
           </Link>

@@ -94,7 +94,7 @@ export default function Home() {
         <h2 className="section-subtitle   py-5">Latest From Business</h2>
       </div>
 
-      <div className=" mx-5 row border-black border-bottom">
+      <div className=" mx-5 row ">
         <div className="col-lg-6">
           <ArticleCard
             category="Business"
@@ -120,7 +120,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="row justify-content-center border-bottom border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
+      <div className="row justify-content-center border-bottom border-top border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
         <h2 className="section-subtitle   py-5">Latest From Technology</h2>
       </div>
       <div className=" mx-5 row border-black border-bottom">
@@ -166,7 +166,7 @@ export default function Home() {
  <div className="row justify-content-center   col-10 col-md-10 col-lg-10 text-center mx-auto container">
           <h2 className="section-subtitle   py-5">Tagmag Media</h2>
         </div>
-        <div className="container-img py-5  mx-5 border-black border-bottom">
+        <div className="container-img py-5  mx-5">
           <div className="imageContainer rrr ">
             <Image
               src="/youtube.png"
@@ -188,10 +188,10 @@ export default function Home() {
 
       
 
-      <div className="row justify-content-center border-bottom border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
+      <div className="row justify-content-center border-bottom border-top border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
         <h2 className="section-subtitle   py-5">New From Entertainment</h2>
       </div>
-      <div className=" mx-5 row border-black border-bottom ">
+      <div className=" mx-5 row  ">
         <div className="col-lg-4">
           <ArticleCard
             category="Entertainment"
@@ -229,7 +229,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="row justify-content-center border-bottom border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
+      <div className="row justify-content-center border-bottom border-top border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
         <h2 className="section-subtitle   py-5">New From Lifestyle</h2>
       </div>
       <div className=" mx-5 row border-black border-bottom">

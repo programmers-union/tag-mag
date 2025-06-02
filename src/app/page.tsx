@@ -161,7 +161,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="row">
+      {/* <div className="row">
         <div className="col-lg">
  <div className="row justify-content-center   col-10 col-md-10 col-lg-10 text-center mx-auto container">
           <h2 className="section-subtitle   py-5">Tagmag Media</h2>
@@ -184,7 +184,7 @@ export default function Home() {
           </div>
         </div>
         </div>
-      </div>
+      </div> */}
 
       
 

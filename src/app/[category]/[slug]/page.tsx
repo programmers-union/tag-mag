@@ -4,6 +4,9 @@ import ArticleCard from "@/components/ArticleCard";
 import ConnectionCards from "@/components/ConnectionCard";
 import DetailSection from "@/components/DetailSection1";
 import { FC } from "react";
+import data from '../../../../public/data/economía.json';
+import { notFound } from "next/navigation";
+
 
 interface DetailPageProps {
   params:Promise <{
@@ -15,22 +18,23 @@ interface DetailPageProps {
 const  DetailPage: FC<DetailPageProps> = async ({ params }) => { 
   const { category, slug } = await  params;
 
-  // Optional formatting
-  const formattedCategory =
-    category.charAt(0).toUpperCase() + category.slice(1);
-  const formattedSlug = slug
-    .replace(/-/g, " ")
-    .replace(/\b\w/g, (c) => c.toUpperCase());
+    const article = data.find(
+    (a) => a.category.toLowerCase() === category.toLowerCase() && a.href === slug
+  );
+  if (!article) return notFound();
+  console.log("article:",article);
 
+ 
   return (
     <div className="container py-3 ">
       <div className="">
         <DetailSection
-          image="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba6d5d53b81a43fff4c75f_pexels-ron-lach-8128675.jpg"
-          category="Lifestyle"
-          title="Beauty Toolbox: Must-Have Products for Every Routine"
-          readTime="2 Min Read"
-          slug="beauty-toolbox-must-have-products"
+          image={article.image}
+          category={article.category}
+          title={article.title}
+          published={article.published}
+          slug={article.href}
+          newsDetail={article.newsDetail}
         />
       </div>
       <div className="row justify-content-center border-bottom border-top border-black  col-12 col-md-10 col-lg-12 text-center mx-auto">
@@ -40,7 +44,7 @@ const  DetailPage: FC<DetailPageProps> = async ({ params }) => {
         <div className="col-lg-6">
           <ArticleCard
             category="Lifestyle"
-            readTime="2 Min Read"
+            published="2 Min Read"
             imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba6fe5e8b4c5d5d4520616_pexels-pus%CC%A6cas%CC%A6-adryan-13051215-p-800.jpg"
             imageAlt="Skincare routine demonstration"
             title="Minimalist Haven: Embracing Simplicity in Your Living Space"
@@ -52,7 +56,7 @@ const  DetailPage: FC<DetailPageProps> = async ({ params }) => {
         <div className="col-lg-6 border-bottom">
           <ArticleCard
             category="Lifestyle"
-            readTime="3 Min Read"
+            published="3 Min Read"
             imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba6b4ce56d392df5886fed_pexels-pixabay-416747-p-800.jpg"
             imageAlt="Skincare routine demonstration"
             title="Fitness Fusion: Balancing Physical and Mental Health"

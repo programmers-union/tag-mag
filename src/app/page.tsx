@@ -3,7 +3,7 @@ import HomeSection1 from "@/components/HomeSection1";
 import ArticleCard from "@/components/ArticleCard";
 import MagazineBanner from "@/components/Banner";
 import ConnectionCards from "@/components/ConnectionCard";
-import Link from "next/link";
+import data from '../../public/data/economía.json'
 
 export default function Home() {
   return (
@@ -11,21 +11,24 @@ export default function Home() {
       <HomeSection1 />
       <div className=" mx-5 row ">
         <div className="col-lg-4">
-          <ArticleCard
-            category="Lifestyle"
-            readTime="2 Min Read"
-            imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba6d5d53b81a43fff4c75f_pexels-ron-lach-8128675-p-500.jpg"
-            imageAlt="Skincare routine demonstration"
-            title="Beauty Toolbox:Must-Have products for every Routine"
-            href="/lifestyle/skincare-secrets"
-            imageWidth="390px"
-            imageHeight="300px"
-          />
+          {data.length > 0 && (
+  <ArticleCard
+    category={data[0].category}
+    published={data[0].published}
+    imageUrl={data[0].image}
+    imageAlt={data[0].imageAlt}
+    title={data[0].title}
+    href={data[0].href}
+    imageWidth="390px"
+    imageHeight="300px"
+  />
+)}
+
         </div>
         <div className="col-lg-4">
           <ArticleCard
             category="Entertainment"
-            readTime="2 Min Read"
+            published="2 Min Read"
             imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba4d0b187cc1a7496fe671_pexels-koolshooters-6976096-p-500.jpg"
             imageAlt="Skincare routine demonstration"
             title="Small Screen Chronicles: Navigating the World of TV"
@@ -37,7 +40,7 @@ export default function Home() {
         <div className="col-lg-4">
           <ArticleCard
             category="Technology"
-            readTime="2 Min Read"
+            published="2 Min Read"
             imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65bb7d1022a1f7da711a1460_pexels-oluwaseun-duncan-226232-p-500.jpg"
             imageAlt="Skincare routine demonstration"
             title="Code Chronicles: Exploring the World of Programming and Development"
@@ -52,7 +55,7 @@ export default function Home() {
         <div className="col-lg-4">
           <ArticleCard
             category="Entertainment"
-            readTime="2 Min Read"
+            published="2 Min Read"
             imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65b7e39b5ff9aae2c327ebdd_pexels-ruslan-alekso-1928131-p-500.jpg"
             imageAlt="Skincare routine demonstration"
             title="Sound Waves: A Symphony of Musical Trends"
@@ -63,20 +66,20 @@ export default function Home() {
         </div>
         <div className="col-lg-4">
           <ArticleCard
-            category="Business"
-            readTime="2 Min Read"
-            imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65bb7e11b60e47e4e2bb8b2c_pexels-thought-catalog-2228570-p-500.jpg"
-            imageAlt="Skincare routine demonstration"
-            title="Crypto Chronicles: Updates and Insights in the World of Virtual Coins"
-            href="/articles/skincare-secrets"
-            imageWidth="390px"
-            imageHeight="300px"
+           category={data[1].category}
+    published={data[1].published}
+    imageUrl={data[1].image}
+    imageAlt={data[1].imageAlt}
+    title={data[1].title}
+    href={data[1].href}
+    imageWidth="390px"
+    imageHeight="300px"
           />
         </div>
         <div className="col-lg-4">
           <ArticleCard
             category="Lifestyle"
-            readTime="2 Min Read"
+            published="2 Min Read"
             imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba796cbb85c6147759d68c_pexels-vanessa-loring-5966137-p-500.jpg"
             imageAlt="Skincare routine demonstration"
             title="Culinary Adventures: Exploring Global Flavors in Your Kitchen"
@@ -97,24 +100,25 @@ export default function Home() {
       <div className=" mx-5 row ">
         <div className="col-lg-6">
           <ArticleCard
-            category="Business"
-            readTime="3 Min Read"
-            imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65bb80783a452a08f674af5a_pexels-andrea-piacquadio-3771089-p-800.jpg"
-            imageAlt="Skincare routine demonstration"
-            title="CEO Insight: Perspectives on Leadership and Business Innovation"
-            href="/articles/skincare-secrets"
+                      
+    category={data[2].category}
+    published={data[2].published}
+    imageUrl={data[2].image}
+    imageAlt={data[2].imageAlt}
+    title={data[2].title}
+    href={data[2].href}
             imageWidth="550px"
             imageHeight="400px"
           />
         </div>
         <div className="col-lg-6">
           <ArticleCard
-            category="Business"
-            readTime="3 Min Read"
-            imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65bb7f7bc84aeeb0552a761d_pexels-gustavo-fring-4005042-p-800.jpg"
-            imageAlt="Skincare routine demonstration"
-            title="Plug into the Future: Exploring the World of Electric Vehicles"
-            href="/articles/skincare-secrets"
+             category={data[3].category}
+    published={data[3].published}
+    imageUrl={data[3].image}
+    imageAlt={data[3].imageAlt}
+    title={data[3].title}
+    href={data[3].href}
             imageWidth="550px"
             imageHeight="400px"
           />
@@ -127,7 +131,7 @@ export default function Home() {
         <div className="col-lg-4">
           <ArticleCard
             category="Technology"
-            readTime="3 Min Read"
+            published="3 Min Read"
             imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65bb7b10aef080ce3f9423b8_pexels-cottonbro-studio-6153354-p-500.jpg"
             imageAlt="Skincare routine demonstration"
             title="Cognitive Chronicles: Exploring the World of Artificial Intelligence"
@@ -139,7 +143,7 @@ export default function Home() {
         <div className="col-lg-4">
           <ArticleCard
             category="Technology"
-            readTime="4 Min Read"
+            published="4 Min Read"
             imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65bb7ce5cd2756c48e18be82_pexels-thisisengineering-3861969-p-500.jpg"
             imageAlt="Skincare routine demonstration"
             title="Future Tech Files: Dive into Tomorrow's Innovations Today"
@@ -151,7 +155,7 @@ export default function Home() {
         <div className="col-lg-4">
           <ArticleCard
             category="Technology"
-            readTime="3 Min Read"
+            published="3 Min Read"
             imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba7b99b362bb03d11dbd88_pexels-michelangelo-buonarroti-8728380-p-500.jpg"
             imageAlt="Skincare routine demonstration"
             title="Navigating the Future: Cutting-Edge Technologies Redefining Tomorrow"
@@ -195,7 +199,7 @@ export default function Home() {
         <div className="col-lg-4">
           <ArticleCard
             category="Entertainment"
-            readTime="4 Min Read"
+            published="4 Min Read"
             imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65b7d99487ba0bab5634ede1_pexels-louis-1200450-p-500.jpg"
             imageAlt="Skincare routine demonstration"
             title="Cinephile Chronicles: The Latest in Cinematic Wonders"
@@ -207,7 +211,7 @@ export default function Home() {
         <div className="col-lg-4">
           <ArticleCard
             category="Entertainment"
-            readTime="4 Min Read"
+            published="4 Min Read"
             imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65b7bfcb60f091d7bd50ed9e_pexels-jo-kassis-6461411-p-500.jpg"
             imageAlt="Skincare routine demonstration"
             title="The Evolution of Dance: From TikTok to Mainstream Culture"
@@ -219,7 +223,7 @@ export default function Home() {
         <div className="col-lg-4">
           <ArticleCard
             category="Entertainment"
-            readTime="4 Min Read"
+            published="4 Min Read"
             imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba4ccd05da28331cf8b7e1_pexels-suzy-hazelwood-3248644-p-500.jpg  "
             imageAlt="Skincare routine demonstration"
             title="Reading Room Revelations: The Latest in Literature"
@@ -236,7 +240,7 @@ export default function Home() {
         <div className="col-lg-6">
           <ArticleCard
             category="Lifestyle"
-            readTime="2 Min Read"
+            published="2 Min Read"
             imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba6fe5e8b4c5d5d4520616_pexels-pus%CC%A6cas%CC%A6-adryan-13051215-p-800.jpg"
             imageAlt="Skincare routine demonstration"
             title="Minimalist Haven: Embracing Simplicity in Your Living Space"
@@ -248,7 +252,7 @@ export default function Home() {
         <div className="col-lg-6 border-bottom">
           <ArticleCard
             category="Lifestyle"
-            readTime="3 Min Read"
+            published="3 Min Read"
             imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba6b4ce56d392df5886fed_pexels-pixabay-416747-p-800.jpg"
             imageAlt="Skincare routine demonstration"
             title="Fitness Fusion: Balancing Physical and Mental Health"

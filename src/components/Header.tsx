@@ -6,10 +6,12 @@ import Image from 'next/image';
 
 
 const categories = [
-  { name: 'Lifestyle', slug: 'lifestyle' },
-  { name: 'Entertainment', slug: 'entertainment' },
-  { name: 'Technology', slug: 'technology' },
-  {name:'Business', slug:'business'}
+  { name: 'Economía', slug: 'economía' },
+  { name: 'Tecnología', slug: 'tecnología' },
+  { name: 'Deportes', slug: 'deportes' },
+  {name:'Salud', slug:'salud'},
+  {name:'Ciencia',slug:'ciencia'},
+  {name:'Politics',slug:'política'}
   
 ];
 

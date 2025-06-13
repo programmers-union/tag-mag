@@ -6,16 +6,18 @@ interface DetailSectionProps {
   image: string;
   category: string;
   title: string;
-  readTime: string;
+  published: string;
   slug: string;
+  newsDetail: string;
 }
 
 const DetailSection: React.FC<DetailSectionProps> = ({
   image,
   category,
   title,
-  readTime,
+  published,
   slug,
+  newsDetail,
 }) => {
   return (
     <>
@@ -23,7 +25,7 @@ const DetailSection: React.FC<DetailSectionProps> = ({
         <div className="beauty-blog-card position-relative mb-5  ">
           <div className="blog-header d-flex justify-content-between align-items-center mb-2">
             <span className="category-label ">{category}</span>
-            <span className="read-time">{readTime}</span>
+            <span className="read-time">{published}</span>
           </div>
 
           <div className="blog-image-container mb-3">
@@ -36,14 +38,15 @@ const DetailSection: React.FC<DetailSectionProps> = ({
               className="blog-image"
             />
           </div>
-          
-          <Link href={`/blog/${slug}`} className="text-decoration-none">
+
+          <Link href={`/${category.toLowerCase()}/${slug}`} className="text-decoration-none">
             <h2 className="blog-title border-bottom border-black">{title}</h2>
           </Link>
 
           <div>
             <h1 className="py-2">How does the app store ranking work?</h1>
-            <p>
+            <p>{newsDetail}</p>
+            {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
               aliquam, purus sit amet luctus venenatis, lectus magna fringilla
               urna, porttitor rhoncus dolor purus non enim praesent elementum
@@ -64,18 +67,7 @@ const DetailSection: React.FC<DetailSectionProps> = ({
               facilisis mauris sit amet massa vitae tortor condimentum lacinia
               quis vel eros donec ac odio tempor orci dapibus ultrices in
               iaculis nunc sed augue lacus.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
-              urna, porttitor rhoncus dolor purus non enim praesent elementum
-              facilisis leo, vel fringilla est ullamcorper eget nulla facilisi
-              etiam dignissim diam quis enim lobortis scelerisque fermentum dui
-              faucibus in ornare quam viverra orci sagittis eu volutpat odio
-              facilisis mauris sit amet massa vitae tortor condimentum lacinia
-              quis vel eros donec ac odio tempor orci dapibus ultrices in
-              iaculis nunc sed augue lacus.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

@@ -19,20 +19,19 @@ interface Article {
   published: string;
 }
 
-const CategoryPage: FC<CategoryPageProps> = async ({ params }) => {
-  const category = decodeURIComponent(params.category);
+const CategoryPage = async ({ params }: { params: Promise<{ category: string }> }) => {
+  // Await the params promise
+  const resolvedParams = await params;
+  const category = decodeURIComponent(resolvedParams.category);
+  
   console.log("category:", category);
-
-  const res = await fetch(`http://localhost:3000/data/${category}.json` || `https://tag-mag-7j6q.vercel.app/${category}.json`);
+  const res = await fetch(`http://localhost:3000/data/${category}.json`);
   if (!res.ok) {
     return notFound();
   }
-
   const articles: Article[] = await res.json();
-
   const formattedCategory =
     category.charAt(0).toUpperCase() + category.slice(1);
-
   return (
     <div>
       <div className="section-header ps-2 p-3">
@@ -40,7 +39,6 @@ const CategoryPage: FC<CategoryPageProps> = async ({ params }) => {
           <h1 className="section-title py-3">{formattedCategory}</h1>
         </div>
       </div>
-
       <div className="mx-5 row">
         {articles.map((article, idx) => (
           <div className="col-lg-4" key={idx}>
@@ -57,7 +55,6 @@ const CategoryPage: FC<CategoryPageProps> = async ({ params }) => {
           </div>
         ))}
       </div>
-
       <div className="container border-black border-top">
         <ConnectionCards />
       </div>

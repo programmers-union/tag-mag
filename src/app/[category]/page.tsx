@@ -25,7 +25,7 @@ const CategoryPage = async ({ params }: { params: Promise<{ category: string }> 
   const category = decodeURIComponent(resolvedParams.category);
   
   console.log("category:", category);
-  const res = await fetch(`http://localhost:3000/data/${category}.json`);
+  const res = await fetch(`http://localhost:3000/data/${category}.json` ||`https://tag-mag-7j6q.vercel.app/data/${category}.json`);
   if (!res.ok) {
     return notFound();
   }

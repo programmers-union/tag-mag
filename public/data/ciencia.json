@@ -1,0 +1,28 @@
+[
+ {
+    "category":"Ciencia",
+    "imageAlt":"¿Cómo Funciona",
+    "title": "¿Cómo Funciona la Gravedad? El Pegamento Invisible del Universo",
+    "newsDetail": "La gravedad es una de las fuerzas fundamentales del universo, responsable de mantenernos pegados al suelo, de que la Luna orbite alrededor de la Tierra y de que los planetas giren en torno al Sol. Aunque es invisible, su efecto está en todas partes y determina la estructura del cosmos. Fue Isaac Newton quien en el siglo XVII formuló la ley de la gravitación universal: todos los cuerpos con masa se atraen entre sí. Cuanto más grande es la masa y más cerca están, mayor es esa atracción. Sin embargo, en el siglo XX, Albert Einstein revolucionó nuestra comprensión al explicar que la gravedad no es una fuerza tradicional, sino una curvatura del espacio-tiempo provocada por la masa. Es decir, los objetos masivos como planetas y estrellas deforman el espacio a su alrededor, y otros cuerpos se mueven siguiendo esa curvatura, como si rodaran sobre una superficie inclinada. Gracias a la gravedad existen las órbitas, las mareas, las estrellas y hasta los agujeros negros. Aunque parezca sencilla, aún guarda misterios sin resolver, especialmente en su relación con la mecánica cuántica. La gravedad, en resumen, es el hilo invisible que mantiene unido el universo.",
+    "href":"como-funciona-la-gravedad-el-pegamento-invisible-del-universo",
+    "image": "/images/como-funciona-la-gravedad-el-pegamento.webp",
+    "published": "14 june 2025"
+  },
+  {
+    "category":"Ciencia",
+    "imageAlt":"Sally Ride",
+    "title":" Sally Ride, la Astronauta Pionera que Tuvo que Ocultar que Era Lesbiana para Llegar al Espacio",
+    "newsDetail":"En 1983, Sally Ride hizo historia al convertirse en la primera mujer estadounidense en viajar al espacio, a bordo del transbordador Challenger. Su hazaña rompió barreras de género en la NASA y la convirtió en un símbolo de inspiración para generaciones de niñas interesadas en la ciencia y la exploración espacial. Pero detrás de esa histórica imagen pública, Sally Ride también tuvo que ocultar una parte esencial de su identidad: era lesbiana, algo que decidió no hacer público durante su vida profesional por miedo a las consecuencias. En una época en la que ser homosexual podía arruinar una carrera, especialmente en instituciones gubernamentales como la NASA, Ride eligió proteger su privacidad y sus sueños. Solo después de su muerte en 2012 se conoció que había compartido casi tres décadas de su vida con su pareja, Tam O’Shaughnessy, también científica y educadora. Sally Ride no solo rompió la barrera del sonido y la gravedad, sino también, aunque en silencio, las barreras sociales de su tiempo. Hoy, su legado no solo se celebra por su papel como astronauta, sino también como símbolo de coraje, autenticidad y lucha por la igualdad.",
+    "href":"sally-ride-la-astronauta-pionera-que-tuvo-que-ocultar-que-era-lesbiana-para-llegar-al-espacio",
+    "image":"/images/sally-ride-la-astronauta-pionera-que-tuvo-que-ocultar-que-era-lesbiana-para-llegar-al-espacio.webp",
+    "published":"16 june 2025"
+
+  },
+  {
+    "category":"Ciencia",
+    "imageAlt":"Mary-Claire King",
+    "title":"Mary-Claire King, la Científica que Descubrió que “Dios es una Mujer”",
+    "newsDetail":""
+
+  }
+]

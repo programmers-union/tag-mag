@@ -29,8 +29,10 @@ const baseUrl =
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000"
       : "https://tag-mag-7j6q.vercel.app";
+      console.log("base url:",baseUrl);
 
   const res = await fetch(`${baseUrl}/data/${category}.json`);
+  console.log("resss:",res)
   const articles: Article[] = await res.json();
   const formattedCategory =
     category.charAt(0).toUpperCase() + category.slice(1);

@@ -22,7 +22,56 @@
     "category":"Ciencia",
     "imageAlt":"Mary-Claire King",
     "title":"Mary-Claire King, la Científica que Descubrió que “Dios es una Mujer”",
-    "newsDetail":""
+    "newsDetail":"La genetista estadounidense Mary-Claire King revolucionó la medicina moderna al descubrir el vínculo entre el gen BRCA1 y el cáncer de mama hereditario, demostrando que ciertas formas de esta enfermedad son causadas por mutaciones genéticas heredadas. Su hallazgo transformó la manera en que se diagnostica, previene y trata el cáncer en mujeres de todo el mundo. En un ámbito científico dominado por hombres, King enfrentó escepticismo y barreras institucionales, pero logró localizar el gen BRCA1 en 1990 tras casi dos décadas de investigación. Este descubrimiento ha permitido salvar miles de vidas y ha ofrecido a muchas mujeres la posibilidad de conocer su riesgo genético y tomar decisiones preventivas informadas. Su trabajo marcó el inicio de la medicina personalizada. Su célebre frase, “Dios es una mujer y se llama BRCA1”, refleja la relevancia de la genética femenina en la salud humana. Mary-Claire King no solo identificó un gen fundamental, sino que también visibilizó el rol de las mujeres en la ciencia, demostrando que el conocimiento puede tener rostro femenino y capacidad transformadora.",
+    "href":"mary-claire-king-la-cientifica-que-descubrio-que-dios-es-una-mujer",
+    "image":"/images/mary-claire-king-la-cientifica-que-descubrio-que-dios-es-una-mujer.webp",
+    "published":"12 june 2025"
 
+  },
+  {
+    "category":"Ciencia",
+    "imageAlt":"Un Segundo para Acabar",
+    "title":"Un Segundo para Acabar lo que el Universo ha Construido en 10 Millones de Años",
+    "newsDetail":"El universo requiere millones de años para formar una estrella, una galaxia o una estructura cósmica compleja, pero puede destruirlas en apenas un segundo, mostrando la extrema fragilidad del equilibrio cósmico. Este contraste entre creación lenta y destrucción instantánea es uno de los grandes enigmas de la astrofísica. Una supernova, por ejemplo, libera en segundos tanta energía como la que el Sol emitirá en toda su vida, pudiendo destruir sistemas planetarios completos. Algo similar ocurre con la fusión de agujeros negros, cuyas colisiones generan ondas gravitacionales detectables a millones de años luz. Esta dualidad revela que, aunque el universo sea paciente al construir, es repentinamente violento al deshacer. En clave humana, esto también refleja la vulnerabilidad de nuestras civilizaciones y ecosistemas. Un solo segundo puede parecer insignificante, pero en la escala del cosmos, puede borrar millones de años de evolución estelar, como si nunca hubieran existido.",
+    "href":"un-segundo-para-acabar-lo-que-el-universo-ha-construido-en-10-millones-de-anos",
+    "image":"/images/un-segundo-para-acabar-lo-que-el-universo-ha-construido-en-10-millones-de-anos.webp",
+    "published":"13 june 2025"
+  },
+  {
+    "category":"Ciencia",
+    "imageAlt":"El Eslabón Perdido",
+    "title":"El Eslabón Perdido en la Evolución del ‘Tyrannosaurus rex’ Vivió en Mongolia Hace Millones de Años",
+    "newsDetail":"Un equipo de paleontólogos ha descubierto en el desierto del Gobi, en Mongolia, los restos de un dinosaurio bautizado como Tyrannosaurus bataar, considerado posible eslabón perdido en la evolución del Tyrannosaurus rex. Con una antigüedad de 70 millones de años, esta especie presenta un tamaño intermedio y una combinación de rasgos primitivos y avanzados, lo que sugiere que Asia, y especialmente Mongolia, pudo ser una zona clave en la migración de estos depredadores hacia América del Norte. El análisis de sus dientes, cráneo y huesos respalda la teoría de que los grandes tiranosáuridos evolucionaron de formas más pequeñas y ágiles. Este hallazgo no solo estrecha el vínculo evolutivo con el T. rex, sino que llena un vacío importante en la historia de estos depredadores, aportando nuevas pistas sobre cómo llegaron a dominar el ecosistema del Cretácico. Se trata de una ventana científica al pasado que ilumina el origen de uno de los dinosaurios más icónicos.",
+    "href":"el-eslabon-perdido-en-la-evolucion-del-tyrannosaurus-rex-vivio-en-mongolia-hace-millones-de-anos",
+    "image":"/images/el-eslabon-perdido-en-la-evolucion-del-tyrannosaurus-rex-vivio-en-mongolia-hace-millones-de-anos.webp",
+    "published":"11 june 2025"
+  },
+  {
+    "category":"Ciencia",
+    "imageAlt":"La Brecha en Matemáticas",
+    "title":"La Brecha en Matemáticas entre Niños y Niñas Aparece Solo Cuatro Meses Después de Empezar el Colegio",
+    "newsDetail":"Un nuevo estudio ha revelado que la brecha de género en matemáticas entre niños y niñas comienza a aparecer apenas cuatro meses después del inicio de la educación formal. Esta diferencia no se debe a la capacidad cognitiva, sino a factores sociales y pedagógicos que influyen tempranamente en cómo se percibe el rendimiento. El estudio, realizado en aulas de educación infantil, mostró que los niños recibían más estímulos y confianza en tareas numéricas, mientras que las niñas eran más dirigidas hacia actividades no matemáticas o recibían ayuda prematura. Esta dinámica acaba generando desigualdades en la confianza y actitud hacia las matemáticas desde edades tempranas. Los investigadores advierten que es urgente revisar las metodologías educativas para eliminar los sesgos inconscientes en el aula. La igualdad de oportunidades en áreas STEM debe comenzar desde el primer día de escuela para evitar que estas diferencias se consoliden con el tiempo.",
+    "href":"la-brecha-en-matematicas-entre-ninos-y-ninas-aparece-solo-cuatro-meses-despues-de-empezar-el-colegio.webp",
+    "image":"/images/la-brecha-en-matematicas-entre-ninos-y-ninas-aparece-solo-cuatro-meses-despues-de-empezar-el-colegio.webp",
+    "published":"12 june 2025"
+
+  },
+  {
+    "category":"Ciencia",
+    "imageAlt":"Destellos de Lucidez",
+    "title":"Destellos de Lucidez Antes de Morir: El Debate que Agita a la Neurociencia",
+    "newsDetail":"En los últimos años, médicos y neurocientíficos han documentado un fenómeno desconcertante conocido como 'lucidez terminal': pacientes en coma o con demencia avanzada que recuperan brevemente la conciencia antes de morir. Este resplandor final, como también se le llama, ha generado un intenso debate en la comunidad científica sobre qué ocurre en el cerebro en los momentos previos al fallecimiento. Testimonios de familiares y cuidadores describen a personas que, tras largos periodos de silencio, se despiden o reconocen a sus seres queridos con total lucidez. Algunas teorías apuntan a una descarga eléctrica final del cerebro, mientras que otras sugieren causas neuroquímicas aún poco comprendidas. Aunque no hay una explicación definitiva, este fenómeno plantea interrogantes profundos sobre la conciencia, la muerte y los límites del conocimiento científico.",
+    "href":"destellos-de-lucidez-antes-de-morir-el-debate-que-agita-a-la-neurociencia",
+    "image":"/images/destellos-de-lucidez-antes-de-morir-el-debate-que-agita-a-la-neurociencia.webp",
+    "published":"12 june 2025"
+  },
+  {
+    "category":"Ciencia",
+    "imageAlt":"La Guerra de las Galaxias",
+    "title":"La Guerra de las Galaxias: ¿Qué Acabó con los Colosos del Universo?",
+    "newsDetail":"Durante el primer milenio cósmico tras el Big Bang, el universo albergó galaxias gigantes que crecían rápidamente, acumulando enormes cantidades de estrellas y materia. Sin embargo, muchas de estas colosales estructuras han desaparecido o se han transformado en galaxias más pequeñas y tranquilas. ¿Qué ocurrió con estos titanes? Según los estudios más recientes, los agujeros negros supermasivos en su interior pudieron emitir tanta energía que calentaron y dispersaron el gas necesario para formar nuevas estrellas, frenando el crecimiento galáctico. Además, colisiones y fusiones entre galaxias habrían alterado su estructura de forma violenta. En lugar de una extinción repentina, estas galaxias habrían perdido su capacidad de evolucionar, apagándose poco a poco. Estos hallazgos ofrecen nuevas pistas sobre cómo el universo pasó del caos primordial a una etapa más estable y serena.",
+    "href":"la-guerra-de-las-galaxias-que-acabo-con-los-colosos-del-universo",
+    "image":"/images/la-guerra-de-las-galaxias-que-acabo-con-los-colosos-del-universo.webp",
+    "published":"24 may 2025"
   }
 ]

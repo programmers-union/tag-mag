@@ -21,7 +21,7 @@ const DetailSection: React.FC<DetailSectionProps> = ({
 }) => {
   return (
     <>
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center container">
         <div className="beauty-blog-card position-relative mb-5  ">
           <div className="blog-header d-flex justify-content-between align-items-center mb-2">
             <span className="category-label ">{category}</span>
@@ -44,7 +44,7 @@ const DetailSection: React.FC<DetailSectionProps> = ({
           </Link>
 
           <div>
-            <h1 className="py-2">How does the app store ranking work?</h1>
+            {/* <h1 className="py-2">How does the app store ranking work?</h1> */}
             <p>{newsDetail}</p>
             {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut

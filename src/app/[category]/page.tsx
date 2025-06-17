@@ -24,7 +24,7 @@ const CategoryPage = async ({ params }: { params: Promise<{ category: string }> 
   const resolvedParams = await params;
   const category = decodeURIComponent(resolvedParams.category);
   
-  console.log("category:", category);
+  // console.log("category:", category);
 const baseUrl =
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000"
@@ -32,7 +32,7 @@ const baseUrl =
       console.log("base url:",baseUrl);
 
   const res = await fetch(`${baseUrl}/data/${category}.json`);
-  console.log("resss:",res)
+  // console.log("resss:",res)
   const articles: Article[] = await res.json();
   const formattedCategory =
     category.charAt(0).toUpperCase() + category.slice(1);

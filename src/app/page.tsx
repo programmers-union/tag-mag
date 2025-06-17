@@ -221,24 +221,24 @@ export default function Home() {
       <div className=" mx-5 row border-black border-bottom">
         <div className="col-lg-6">
           <ArticleCard
-            category="Lifestyle"
-            published="2 Min Read"
-            imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba6fe5e8b4c5d5d4520616_pexels-pus%CC%A6cas%CC%A6-adryan-13051215-p-800.jpg"
-            imageAlt="Skincare routine demonstration"
-            title="Minimalist Haven: Embracing Simplicity in Your Living Space"
-            href="/lifestyle/minimalist-haven"
+            category={deportesdata[1].category}
+            published={deportesdata[1].published}
+            imageUrl={deportesdata[1].image}
+            imageAlt={deportesdata[1].imageAlt}
+            title={deportesdata[1].title}
+            href={`/deportes/${deportesdata[1].href}`}
             imageWidth="550px"
             imageHeight="400px"
           />
         </div>
         <div className="col-lg-6 border-bottom">
           <ArticleCard
-            category="Lifestyle"
-            published="3 Min Read"
-            imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba6b4ce56d392df5886fed_pexels-pixabay-416747-p-800.jpg"
-            imageAlt="Skincare routine demonstration"
-            title="Fitness Fusion: Balancing Physical and Mental Health"
-            href="/lifestyle/fitness-fusion"
+             category={deportesdata[2].category}
+            published={deportesdata[2].published}
+            imageUrl={deportesdata[2].image}
+            imageAlt={deportesdata[2].imageAlt}
+            title={deportesdata[2].title}
+            href={`/deportes/${deportesdata[2].href}`}
             imageWidth="550px"
             imageHeight="400px"
           />

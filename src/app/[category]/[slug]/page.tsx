@@ -16,6 +16,7 @@ interface Article {
   published: string;
 }
 
+
 interface DetailPageProps {
   params: Promise<{
     category: string;

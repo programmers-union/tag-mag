@@ -8,6 +8,7 @@ import tecnologíadata from '../../public/data/tecnología.json'
 import deportesdata from '../../public/data/deportes.json'
 import saluddata from '../../public/data/salud.json'
 import cienciadata from '../../public/data/ciencia.json'
+import políticadata from '../../public/data/política.json'
 
 export default function Home() {
   return (
@@ -216,29 +217,29 @@ export default function Home() {
         </div>
       </div>
       <div className="row justify-content-center border-bottom border-top border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
-        <h2 className="section-subtitle   py-5">New From Lifestyle</h2>
+        <h2 className="section-subtitle   py-5">New From Politics</h2>
       </div>
       <div className=" lg:mx-5 mx-0 row border-black border-bottom">
         <div className="col-lg-6">
           <ArticleCard
-            category={deportesdata[1].category}
-            published={deportesdata[1].published}
-            imageUrl={deportesdata[1].image}
-            imageAlt={deportesdata[1].imageAlt}
-            title={deportesdata[1].title}
-            href={`/deportes/${deportesdata[1].href}`}
+            category={políticadata[1].category}
+            published={políticadata[1].published}
+            imageUrl={políticadata[1].image}
+            imageAlt={políticadata[1].imageAlt}
+            title={políticadata[1].title}
+            href={`/política/${políticadata[1].href}`}
             imageWidth="572px"
             imageHeight="400px"
           />
         </div>
         <div className="col-lg-6 border-bottom">
           <ArticleCard
-             category={deportesdata[2].category}
-            published={deportesdata[2].published}
-            imageUrl={deportesdata[2].image}
-            imageAlt={deportesdata[2].imageAlt}
-            title={deportesdata[2].title}
-            href={`/deportes/${deportesdata[2].href}`}
+             category={políticadata[2].category}
+            published={políticadata[2].published}
+            imageUrl={políticadata[2].image}
+            imageAlt={políticadata[2].imageAlt}
+            title={políticadata[2].title}
+            href={`/política/${políticadata[2].href}`}
             imageWidth="572px"
             imageHeight="400px"
           />

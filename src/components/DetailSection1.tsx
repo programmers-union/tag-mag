@@ -45,7 +45,7 @@ const DetailSection: React.FC<DetailSectionProps> = ({
 
           <div>
             {/* <h1 className="py-2">How does the app store ranking work?</h1> */}
-            <p>{newsDetail}</p>
+            <p className="detail-para">{newsDetail}</p>
             {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
               aliquam, purus sit amet luctus venenatis, lectus magna fringilla

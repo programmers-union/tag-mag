@@ -43,7 +43,7 @@ const baseUrl =
           <h1 className="section-title py-3">{formattedCategory}</h1>
         </div>
       </div>
-      <div className="mx-5 row">
+      <div className="lg:mx-5 mx-0 row">
         {articles.map((article, idx) => (
           <div className="col-lg-4" key={idx}>
             <ArticleCard

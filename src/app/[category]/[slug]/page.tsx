@@ -85,7 +85,7 @@ const DetailPage: FC<DetailPageProps> = async ({ params }) => {
           <h2 className="section-subtitle py-5">Related Articles</h2>
         </div>
         
-        <div className="mx-5 row border-black border-bottom">
+        <div className="lg:mx-5 mx-0   row border-black border-bottom">
           {relatedArticles.map((relatedArticle, idx) => (
             <div className="col-lg-6" key={idx}>
               <ArticleCard

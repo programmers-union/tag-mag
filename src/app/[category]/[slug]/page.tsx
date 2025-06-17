@@ -28,6 +28,7 @@ const DetailPage: FC<DetailPageProps> = async ({ params }) => {
   
   // Decode the category in case it has special characters
   const decodedCategory = decodeURIComponent(category);
+
   
   // console.log("category:", decodedCategory);
   
@@ -41,6 +42,7 @@ const DetailPage: FC<DetailPageProps> = async ({ params }) => {
   try {
     // Fetch the JSON file for the specific category
     const res = await fetch(`${baseUrl}/data/${decodedCategory}.json`);
+    console.log("res:",res)
     
     if (!res.ok) {
       console.error("Failed to fetch data:", res.status);

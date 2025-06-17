@@ -35,7 +35,7 @@ export default function Home() {
             imageUrl={deportesdata[0].image}
             imageAlt={deportesdata[0].imageAlt}
             title={deportesdata[0].title}
-            href={deportesdata[0].href}
+            href={`/deportes/${deportesdata[0].href}`}
             imageWidth="390px"
             imageHeight="300px"
           />
@@ -47,7 +47,7 @@ export default function Home() {
             imageUrl={tecnologíadata[0].image}
             imageAlt={tecnologíadata[0].imageAlt}
             title={tecnologíadata[0].title}
-            href={tecnologíadata[0].href}
+             href={`/tecnología/${tecnologíadata[0].href}`}
             imageWidth="390px"
             imageHeight="300px"
           />
@@ -62,7 +62,7 @@ export default function Home() {
             imageUrl={saluddata[0].image}
             imageAlt={saluddata[0].image}
             title={saluddata[0].title}
-            href={saluddata[0].href}
+             href={`/salud/${saluddata[0].href}`}
             imageWidth="390px"
             imageHeight="300px"
           />
@@ -88,7 +88,7 @@ export default function Home() {
             imageUrl={cienciadata[0].image}
             imageAlt={cienciadata[0].image}
             title={cienciadata[0].title}
-            href={cienciadata[0].href}
+             href={`/ciencia/${cienciadata[0].href}`}
             imageWidth="390px"
             imageHeight="300px"
           />
@@ -143,7 +143,7 @@ export default function Home() {
             imageUrl={tecnologíadata[1].image}
             imageAlt={tecnologíadata[1].imageAlt}
             title={tecnologíadata[1].title}
-            href={tecnologíadata[1].href}
+            href={`/tecnología/${tecnologíadata[1].href}`}
             imageWidth="390px"
             imageHeight="300px"
           />
@@ -155,7 +155,7 @@ export default function Home() {
             imageUrl={tecnologíadata[2].image}
             imageAlt={tecnologíadata[2].imageAlt}
             title={tecnologíadata[2].title}
-            href={tecnologíadata[2].href}
+             href={`/tecnología/${tecnologíadata[2].href}`}
             imageWidth="390px"
             imageHeight="300px"
           />
@@ -167,7 +167,7 @@ export default function Home() {
             imageUrl={tecnologíadata[3].image}
             imageAlt={tecnologíadata[3].imageAlt}
             title={tecnologíadata[3].title}
-            href={tecnologíadata[3].href}
+            href={`/tecnología/${tecnologíadata[3].href}`}
             imageWidth="390px"
             imageHeight="300px"
           />
@@ -185,7 +185,7 @@ export default function Home() {
             imageUrl={cienciadata[1].image}
             imageAlt={cienciadata[1].imageAlt}
             title={cienciadata[1].title}
-            href={cienciadata[1].href}
+             href={`/ciencia/${cienciadata[1].href}`}
             imageWidth="390px"
             imageHeight="300px"
           />
@@ -197,7 +197,7 @@ export default function Home() {
             imageUrl={cienciadata[2].image}
             imageAlt={cienciadata[2].imageAlt}
             title={cienciadata[2].title}
-            href={cienciadata[2].href}
+            href={`/ciencia/${cienciadata[2].href}`}
             imageWidth="390px"
             imageHeight="300px"
           />
@@ -209,7 +209,7 @@ export default function Home() {
             imageUrl={cienciadata[3].image}
             imageAlt={cienciadata[3].imageAlt}
             title={cienciadata[3].title}
-            href={cienciadata[3].href}
+            href={`/ciencia/${cienciadata[3].href}`}
             imageWidth="390px"
             imageHeight="300px"
           />

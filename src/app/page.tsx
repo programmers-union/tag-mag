@@ -3,7 +3,11 @@ import HomeSection1 from "@/components/HomeSection1";
 import ArticleCard from "@/components/ArticleCard";
 import MagazineBanner from "@/components/Banner";
 import ConnectionCards from "@/components/ConnectionCard";
-import data from '../../public/data/economía.json'
+import economíadata from '../../public/data/economía.json'
+import tecnologíadata from '../../public/data/tecnología.json'
+import deportesdata from '../../public/data/deportes.json'
+import saluddata from '../../public/data/salud.json'
+import cienciadata from '../../public/data/ciencia.json'
 
 export default function Home() {
   return (
@@ -11,14 +15,14 @@ export default function Home() {
       <HomeSection1 />
       <div className=" mx-5 row ">
         <div className="col-lg-4">
-          {data.length > 0 && (
+          {economíadata.length > 0 && (
             <ArticleCard
-              category={data[0].category}
-              published={data[0].published}
-              imageUrl={data[0].image}
-              imageAlt={data[0].imageAlt}
-              title={data[0].title}
-              href={`/economía/${data[0].href}`}
+              category={economíadata[0].category}
+              published={economíadata[0].published}
+              imageUrl={economíadata[0].image}
+              imageAlt={economíadata[0].imageAlt}
+              title={economíadata[0].title}
+              href={`/economía/${economíadata[0].href}`}
               imageWidth="390px"
               imageHeight="300px"
             />
@@ -26,24 +30,24 @@ export default function Home() {
         </div>
         <div className="col-lg-4">
           <ArticleCard
-            category="Entertainment"
-            published="2 Min Read"
-            imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba4d0b187cc1a7496fe671_pexels-koolshooters-6976096-p-500.jpg"
-            imageAlt="Skincare routine demonstration"
-            title="Small Screen Chronicles: Navigating the World of TV"
-            href="/entertainment/small-screen-chronicles"
+            category={deportesdata[0].category}
+            published={deportesdata[0].published}
+            imageUrl={deportesdata[0].image}
+            imageAlt={deportesdata[0].imageAlt}
+            title={deportesdata[0].title}
+            href={deportesdata[0].href}
             imageWidth="390px"
             imageHeight="300px"
           />
         </div>
         <div className="col-lg-4">
           <ArticleCard
-            category="Technology"
-            published="2 Min Read"
-            imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65bb7d1022a1f7da711a1460_pexels-oluwaseun-duncan-226232-p-500.jpg"
-            imageAlt="Skincare routine demonstration"
-            title="Code Chronicles: Exploring the World of Programming and Development"
-            href="/technology/code-chronicles"
+            category={tecnologíadata[0].category}
+            published={tecnologíadata[0].published}
+            imageUrl={tecnologíadata[0].image}
+            imageAlt={tecnologíadata[0].imageAlt}
+            title={tecnologíadata[0].title}
+            href={tecnologíadata[0].href}
             imageWidth="390px"
             imageHeight="300px"
           />
@@ -53,25 +57,25 @@ export default function Home() {
       <div className=" mx-5 row border-black border-bottom">
         <div className="col-lg-4">
           <ArticleCard
-            category="Entertainment"
-            published="2 Min Read"
-            imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65b7e39b5ff9aae2c327ebdd_pexels-ruslan-alekso-1928131-p-500.jpg"
-            imageAlt="Skincare routine demonstration"
-            title="Sound Waves: A Symphony of Musical Trends"
-            href="/entertainment/sound-waves"
+            category={saluddata[0].category}
+            published={saluddata[0].published}
+            imageUrl={saluddata[0].image}
+            imageAlt={saluddata[0].image}
+            title={saluddata[0].title}
+            href={saluddata[0].href}
             imageWidth="390px"
             imageHeight="300px"
           />
         </div>
         <div className="col-lg-4">
-          {data.length > 1 && (
+          {economíadata.length > 1 && (
             <ArticleCard
-              category={data[1].category}
-              published={data[1].published}
-              imageUrl={data[1].image}
-              imageAlt={data[1].imageAlt}
-              title={data[1].title}
-              href={`/economía/${data[1].href}`}
+              category={economíadata[1].category}
+              published={economíadata[1].published}
+              imageUrl={economíadata[1].image}
+              imageAlt={economíadata[1].imageAlt}
+              title={economíadata[1].title}
+              href={`/economía/${economíadata[1].href}`}
               imageWidth="390px"
               imageHeight="300px"
             />
@@ -79,12 +83,12 @@ export default function Home() {
         </div>
         <div className="col-lg-4">
           <ArticleCard
-            category="Lifestyle"
-            published="2 Min Read"
-            imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba796cbb85c6147759d68c_pexels-vanessa-loring-5966137-p-500.jpg"
-            imageAlt="Skincare routine demonstration"
-            title="Culinary Adventures: Exploring Global Flavors in Your Kitchen"
-            href="/lifestyle/culinary-adventures"
+            category={cienciadata[0].category}
+            published={cienciadata[0].published}
+            imageUrl={cienciadata[0].image}
+            imageAlt={cienciadata[0].image}
+            title={cienciadata[0].title}
+            href={cienciadata[0].href}
             imageWidth="390px"
             imageHeight="300px"
           />
@@ -100,28 +104,28 @@ export default function Home() {
 
       <div className=" mx-5 row ">
         <div className="col-lg-6">
-          {data.length > 2 && (
+          {economíadata.length > 2 && (
             <ArticleCard
-              category={data[2].category}
-              published={data[2].published}
-              imageUrl={data[2].image}
-              imageAlt={data[2].imageAlt}
-              title={data[2].title}
-              href={`/economía/${data[2].href}`}
+              category={economíadata[2].category}
+              published={economíadata[2].published}
+              imageUrl={economíadata[2].image}
+              imageAlt={economíadata[2].imageAlt}
+              title={economíadata[2].title}
+              href={`/economía/${economíadata[2].href}`}
               imageWidth="550px"
               imageHeight="400px"
             />
           )}
         </div>
         <div className="col-lg-6">
-          {data.length > 3 && (
+          {economíadata.length > 3 && (
             <ArticleCard
-              category={data[3].category}
-              published={data[3].published}
-              imageUrl={data[3].image}
-              imageAlt={data[3].imageAlt}
-              title={data[3].title}
-              href={`/economía/${data[3].href}`}
+              category={economíadata[3].category}
+              published={economíadata[3].published}
+              imageUrl={economíadata[3].image}
+              imageAlt={economíadata[3].imageAlt}
+              title={economíadata[3].title}
+              href={`/economía/${economíadata[3].href}`}
               imageWidth="550px"
               imageHeight="400px"
             />
@@ -134,36 +138,36 @@ export default function Home() {
       <div className=" mx-5 row border-black border-bottom">
         <div className="col-lg-4">
           <ArticleCard
-            category="Technology"
-            published="3 Min Read"
-            imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65bb7b10aef080ce3f9423b8_pexels-cottonbro-studio-6153354-p-500.jpg"
-            imageAlt="Skincare routine demonstration"
-            title="Cognitive Chronicles: Exploring the World of Artificial Intelligence"
-            href="/technology/cognitive-chronicles"
+            category={tecnologíadata[1].category}
+            published={tecnologíadata[1].published}
+            imageUrl={tecnologíadata[1].image}
+            imageAlt={tecnologíadata[1].imageAlt}
+            title={tecnologíadata[1].title}
+            href={tecnologíadata[1].href}
             imageWidth="390px"
             imageHeight="300px"
           />
         </div>
         <div className="col-lg-4">
           <ArticleCard
-            category="Technology"
-            published="4 Min Read"
-            imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65bb7ce5cd2756c48e18be82_pexels-thisisengineering-3861969-p-500.jpg"
-            imageAlt="Skincare routine demonstration"
-            title="Future Tech Files: Dive into Tomorrow's Innovations Today"
-            href="/technology/future-tech-files"
+            category={tecnologíadata[2].category}
+            published={tecnologíadata[2].published}
+            imageUrl={tecnologíadata[2].image}
+            imageAlt={tecnologíadata[2].imageAlt}
+            title={tecnologíadata[2].title}
+            href={tecnologíadata[2].href}
             imageWidth="390px"
             imageHeight="300px"
           />
         </div>
         <div className="col-lg-4">
           <ArticleCard
-            category="Technology"
-            published="3 Min Read"
-            imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba7b99b362bb03d11dbd88_pexels-michelangelo-buonarroti-8728380-p-500.jpg"
-            imageAlt="Skincare routine demonstration"
-            title="Navigating the Future: Cutting-Edge Technologies Redefining Tomorrow"
-            href="/technology/navigating-future"
+            category={tecnologíadata[3].category}
+            published={tecnologíadata[3].published}
+            imageUrl={tecnologíadata[3].image}
+            imageAlt={tecnologíadata[3].imageAlt}
+            title={tecnologíadata[3].title}
+            href={tecnologíadata[3].href}
             imageWidth="390px"
             imageHeight="300px"
           />
@@ -171,41 +175,41 @@ export default function Home() {
       </div>
 
       <div className="row justify-content-center border-bottom border-top border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
-        <h2 className="section-subtitle   py-5">New From Entertainment</h2>
+        <h2 className="section-subtitle   py-5">New From Sceince</h2>
       </div>
       <div className=" mx-5 row  ">
         <div className="col-lg-4">
           <ArticleCard
-            category="Entertainment"
-            published="4 Min Read"
-            imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65b7d99487ba0bab5634ede1_pexels-louis-1200450-p-500.jpg"
-            imageAlt="Skincare routine demonstration"
-            title="Cinephile Chronicles: The Latest in Cinematic Wonders"
-            href="/entertainment/cinephile-chronicles"
+            category={cienciadata[1].category}
+            published={cienciadata[1].published}
+            imageUrl={cienciadata[1].image}
+            imageAlt={cienciadata[1].imageAlt}
+            title={cienciadata[1].title}
+            href={cienciadata[1].href}
             imageWidth="390px"
             imageHeight="300px"
           />
         </div>
         <div className="col-lg-4">
           <ArticleCard
-            category="Entertainment"
-            published="4 Min Read"
-            imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65b7bfcb60f091d7bd50ed9e_pexels-jo-kassis-6461411-p-500.jpg"
-            imageAlt="Skincare routine demonstration"
-            title="The Evolution of Dance: From TikTok to Mainstream Culture"
-            href="/entertainment/evolution-of-dance"
+            category={cienciadata[2].category}
+            published={cienciadata[2].published}
+            imageUrl={cienciadata[2].image}
+            imageAlt={cienciadata[2].imageAlt}
+            title={cienciadata[2].title}
+            href={cienciadata[2].href}
             imageWidth="390px"
             imageHeight="300px"
           />
         </div>
         <div className="col-lg-4">
           <ArticleCard
-            category="Entertainment"
-            published="4 Min Read"
-            imageUrl="https://cdn.prod.website-files.com/65706a428903abc2db294774/65ba4ccd05da28331cf8b7e1_pexels-suzy-hazelwood-3248644-p-500.jpg"
-            imageAlt="Skincare routine demonstration"
-            title="Reading Room Revelations: The Latest in Literature"
-            href="/entertainment/reading-room-revelations"
+            category={cienciadata[3].category}
+            published={cienciadata[3].published}
+            imageUrl={cienciadata[3].image}
+            imageAlt={cienciadata[3].imageAlt}
+            title={cienciadata[3].title}
+            href={cienciadata[3].href}
             imageWidth="390px"
             imageHeight="300px"
           />

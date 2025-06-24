@@ -37,12 +37,12 @@ const Footer = () => {
             <div className="col-6 col-md-3 mb-4 mb-md-0">
               <h3 className="footer-heading mb-3">Categories</h3>
               <ul className="footer-links list-unstyled">
-                <li className="mb-2"><Link href="/category/economía" className="footer-link">Economía</Link></li>
-                <li className="mb-2"><Link href="/category/tecnología" className="footer-link">Tecnología</Link></li>
-                <li className="mb-2"><Link href="/category/deportes" className="footer-link">Deportes</Link></li>
-                <li className="mb-2"><Link href="/category/salud" className="footer-link">Salud</Link></li>
-                 <li className="mb-2"><Link href="/category/ciencia" className="footer-link">Ciencia</Link></li>
-                 <li className="mb-2"><Link href="/category/política" className="footer-link">Política</Link></li>
+                <li className="mb-2"><Link href="/" className="footer-link">Economía</Link></li>
+                <li className="mb-2"><Link href="/" className="footer-link">Tecnología</Link></li>
+                <li className="mb-2"><Link href="/" className="footer-link">Deportes</Link></li>
+                <li className="mb-2"><Link href="/" className="footer-link">Salud</Link></li>
+                 <li className="mb-2"><Link href="/" className="footer-link">Ciencia</Link></li>
+                 <li className="mb-2"><Link href="/" className="footer-link">Política</Link></li>
 
 
 

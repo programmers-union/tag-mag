@@ -11,7 +11,7 @@ const categories = [
   { name: 'Deportes', slug: 'deportes' },
   {name:'Salud', slug:'salud'},
   {name:'Ciencia',slug:'ciencia'},
-  {name:'Politics',slug:'política'}
+  {name:'Política',slug:'política'}
   
 ];
 

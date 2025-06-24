@@ -9,9 +9,15 @@ import deportesdata from '../../public/data/deportes.json'
 import saluddata from '../../public/data/salud.json'
 import cienciadata from '../../public/data/ciencia.json'
 import políticadata from '../../public/data/política.json'
+import Script from "next/script";
 
 export default function Home() {
   return (
+
+   <main>
+   <Script
+   
+   />
     <div className="">
       <HomeSection1 />
       <div className="lg:mx-5 mx-2 row ">
@@ -100,7 +106,7 @@ export default function Home() {
       </div>
 
       <div className="row justify-content-center border-bottom border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
-        <h2 className="section-subtitle   py-5">Latest From Business</h2>
+        <h2 className="section-subtitle   py-5">Lo último de Economía</h2>
       </div>
 
       <div className=" lg:mx-5 mx-0 row ">
@@ -134,7 +140,7 @@ export default function Home() {
         </div>
       </div>
       <div className="row justify-content-center border-bottom border-top border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
-        <h2 className="section-subtitle   py-5">Latest From Technology</h2>
+        <h2 className="section-subtitle   py-5">Latest From Tecnología</h2>
       </div>
       <div className=" lg:mx-5 mx-0 row border-black border-bottom">
         <div className="col-lg-4">
@@ -176,7 +182,7 @@ export default function Home() {
       </div>
 
       <div className="row justify-content-center border-bottom border-top border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
-        <h2 className="section-subtitle   py-5">New From Sceince</h2>
+        <h2 className="section-subtitle   py-5">Lo último de Ciencia</h2>
       </div>
       <div className=" lg:mx-5 mx-0 row  ">
         <div className="col-lg-4">
@@ -217,7 +223,7 @@ export default function Home() {
         </div>
       </div>
       <div className="row justify-content-center border-bottom border-top border-black  col-12 col-md-10 col-lg-12 text-center mx-auto container">
-        <h2 className="section-subtitle   py-5">New From Politics</h2>
+        <h2 className="section-subtitle   py-5">Lo último de Política</h2>
       </div>
       <div className=" lg:mx-5 mx-0 row border-black border-bottom">
         <div className="col-lg-6">
@@ -249,5 +255,7 @@ export default function Home() {
         <ConnectionCards />
       </div>
     </div>
+   </main>
+
   );
 }

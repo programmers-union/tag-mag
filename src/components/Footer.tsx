@@ -24,13 +24,13 @@ const Footer = () => {
             
             {/* Menu Column */}
             <div className="col-6 col-md-3 mb-4 mb-md-0">
-              <h3 className="footer-heading mb-3">Menu</h3>
+              {/* <h3 className="footer-heading mb-3">Menu</h3>
               <ul className="footer-links list-unstyled">
                 <li className="mb-2"><Link href="/" className="footer-link">Home</Link></li>
                 <li className="mb-2"><Link href="/about" className="footer-link">About</Link></li>
                 <li className="mb-2"><Link href="/contact" className="footer-link">Contact</Link></li>
                 <li className="mb-2"><Link href="/license" className="footer-link">License</Link></li>
-              </ul>
+              </ul> */}
             </div>
             
             {/* Categories Column */}
